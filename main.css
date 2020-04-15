@@ -1,0 +1,69 @@
+		h1 {
+			text-align: center;
+		}
+
+		p {
+			font-weight: 200;
+		}
+		div h4 {
+			float: right;
+			margin-bottom: 0;
+		}
+
+		h4 {
+			text-align: center;
+			border: 1px solid black;
+			height: 20%;
+			width: 15%;
+			margin: 3px;
+		}
+		@media (min-width: 992px) {
+			div {
+				float: left;
+				width: 30%;
+				height:31%;
+				border: 1px solid black;
+				padding: 1px;
+				margin: 10px;
+				background-color: grey;
+			}
+		
+		}
+		@media (min-width: 768px) and (max-width: 991px) {
+			.pizza, .sushi {
+				width: 45%;
+				height: 50%%;
+				border: 1px solid black;
+				padding: 1px;
+				margin: 10px;
+				background-color: grey;
+			}
+
+			.pizza {
+				float: right;
+			}
+			.sushi {
+				float: left;
+			}
+			.nuts {
+				float: left;
+				height: 10%;
+				width: 97%;
+				border: 1px solid black;
+				padding: 1px;
+				margin: 10px;
+				background-color: grey;
+			}
+
+		}
+
+		@media (max-width: 767px) {
+			.nuts, .pizza, .sushi {
+				width: 92.5%;
+				height: 65%;
+				border: 1px solid black;
+				padding: 1px;
+				margin: 10px;
+				background-color: grey;
+			}
+		}
