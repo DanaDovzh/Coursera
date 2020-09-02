@@ -1,0 +1,67 @@
+
+body, html, main {
+	height: 100%;
+	 background:linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url('../img/1.jpg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; 
+}
+header { 
+    position: absolute;
+    width: 100%;   
+}
+main {
+    padding: 57px;
+    float: both;
+}
+footer { 
+	position: fixed; /* Фиксированное положение */
+   /* Левый нижний угол */ /* Левый нижний угол */
+   left: 0; bottom: 0;
+    padding: 10px; /* Поля вокруг текста */
+    background: rgb(153, 51, 0); /* Цвет фона */
+    width: 100%;
+    font-size: both;
+}
+
+button.button-click{
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    height: 10em;
+    width: 20em;
+    border-radius: 10%;
+    opacity: .8;
+    z-index: 1;
+
+}
+
+.about-us {
+    margin-top: 10px;
+    color: white;
+    text-align: center;
+}
+
+.fon {
+	z-index: 2;
+}
+.click {
+	font-size: 3em;
+	font-style: oblique;
+}
+
+
+@media (max-width: 576px) {
+	button.button-click {
+		height: 10em;
+    	width: 10em;
+    	border-radius: 50%;
+	}
+	.click {
+	font-size: 1.5em;
+	align-items: center;
+	}
+}

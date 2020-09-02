@@ -1,0 +1,74 @@
+header { 
+    text-align: center;
+    width: 100%; 
+    height: 45px;
+    background: rgb(0, 0, 0);
+   	font-size: 1.7em; 
+}
+
+body, html, main {
+	height: 100%;
+	 background:url('../img/2.jpg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; 
+}
+
+.btn-book, .btn-film {
+	width: 220px;
+	height: 70px;
+	font-size: 2em;
+	color: #ffffff;
+	font-weight: 600;
+
+}
+
+button {
+	background-image: url('../img/3.jpg'); 
+
+}
+ .btns {
+ 	text-align: center;
+ }
+.want {
+	font-size: 4em;
+	color: white;
+	text-align: center;
+	font-weight: 600;
+}
+
+.gradient {
+	color: transparent;    
+	-webkit-background-clip: text;
+	background-clip: text;
+	background-image: linear-gradient(120deg, #99004d, #cc0099, #e6e600); 
+	font-weight: 700;
+}
+footer { 
+	position: fixed; /* Фиксированное положение */
+   /* Левый нижний угол */ /* Левый нижний угол */
+   bottom: 0;
+    padding: 10px; /* Поля вокруг текста */
+    background: rgb(153, 51, 0); /* Цвет фона */
+    width: 100%;
+}
+
+.btnBack {
+	text-decoration: none;
+}
+.copyright {
+	display: inline;
+	text-align: center;
+	color: white;
+}
+
+@media (max-width: 576px)  {
+	.btns {
+		display: block;
+	}
+
+	.btn-book, .btn-film {
+		margin: auto;
+	}
+}
