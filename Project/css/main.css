@@ -1,11 +1,17 @@
 
-body, html, main {
-	height: 100%;
+html, main {
+
 	 background:linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url('../img/1.jpg');
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover; 
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
 }
 header { 
     position: absolute;
@@ -14,16 +20,13 @@ header {
 main {
     padding: 57px;
     float: both;
+    flex: 1;
 }
 footer { 
-	position: fixed; /* Фиксированное положение */
-   /* Левый нижний угол */ /* Левый нижний угол */
-   left: 0; bottom: 0;
     padding: 10px; /* Поля вокруг текста */
-    background: rgb(153, 51, 0); /* Цвет фона */
-    width: 100%;
-    font-size: both;
+    background: rgb(153, 51, 0); /* Цвет фона */   
 }
+
 
 button.button-click{
 	position: absolute;
