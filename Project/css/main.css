@@ -50,10 +50,6 @@ button.button-click{
 .fon {
 	z-index: 2;
 }
-.click {
-	font-size: 3em;
-	font-style: oblique;
-}
 
 
 @media (max-width: 576px) {
