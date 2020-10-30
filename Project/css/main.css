@@ -1,6 +1,5 @@
 
 html, main {
-
 	 background:linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url('../img/1.jpg');
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -23,8 +22,8 @@ main {
     flex: 1;
 }
 footer { 
-    padding: 10px; /* Поля вокруг текста */
-    background: rgb(153, 51, 0); /* Цвет фона */   
+    padding: 10px; 
+    background: rgb(153, 51, 0);  
 }
 
 

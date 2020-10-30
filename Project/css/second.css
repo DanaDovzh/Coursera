@@ -1,7 +1,11 @@
+button:active {
+	outline: none;
+	border:none;
+}
 header { 
     text-align: center;
     width: 100%; 
-    height: 45px;
+    height: auto;
     background: rgb(0, 0, 0);
    	font-size: 1.7em; 
 }
@@ -21,15 +25,49 @@ body, html, main {
 	font-size: 2em;
 	color: #ffffff;
 	font-weight: 600;
-
+	border-radius: 20px;
+	box-shadow: 10px 10px 25px 0px rgba(242,189,242,1);
+	margin-top: 10px;
 }
 
+.btn-book:hover,
+.btn-film:hover {
+	transform: scale(1.2);
+}
 button {
-	background-image: url('../img/3.jpg'); 
+	border: none;
+	animation-name: bg-btn;
+	background-size: contain;
+	animation-duration: 50s;
+	animation-iteration-count: infinite;
+}
 
+.btn-book {
+	background-image: url('../img/bg-btn-books.jpg');
+}
+
+.btn-film {
+	background-image: url('../img/bg-btn-movies.jpg');
+}
+
+@keyframes bg-btn {
+
+	0% {
+		background-position-x: 0%;
+	}
+	50% {
+		background-position-x: 50%;
+	}
+
+	100% {
+		background-position-x: 100%;
+	}
 }
  .btns {
- 	text-align: center;
+	 text-align: center;
+	 display: flex;
+	 justify-content: center;
+	 flex-wrap: wrap;
  }
 .want {
 	font-size: 4em;
@@ -44,13 +82,13 @@ button {
 	background-clip: text;
 	background-image: linear-gradient(120deg, #99004d, #cc0099, #e6e600); 
 	font-weight: 700;
+	font-size: 24px;
 }
 footer { 
-	position: fixed; /* Фиксированное положение */
-   /* Левый нижний угол */ /* Левый нижний угол */
+	position: fixed;
    bottom: 0;
-    padding: 10px; /* Поля вокруг текста */
-    background: rgb(153, 51, 0); /* Цвет фона */
+    padding: 10px; 
+    background: rgb(153, 51, 0); 
     width: 100%;
 }
 
@@ -63,12 +101,23 @@ footer {
 	color: white;
 }
 
-@media (max-width: 576px)  {
-	.btns {
-		display: block;
+@media (max-width: 768px) {
+	.want {
+		font-size: 2.5em;
 	}
 
 	.btn-book, .btn-film {
-		margin: auto;
+		width: 180px;
+		height: 50px;
+		font-size: 1.3em;
+		color: #ffffff;
 	}
 }
+
+
+@media (max-width: 600px) {
+	.gradient {
+		font-size: 16px;
+	}
+}
+
